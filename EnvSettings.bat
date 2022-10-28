@@ -1,0 +1,11 @@
+set CMDBDriver=oracle.jdbc.driver.OracleDriver
+set CMDBDURL=jdbc:oracle:thin:@localhost:1521/orcl
+set CMDBUser=ncbadb
+set CMDBPassword=ncba123
+set CMDBPoolSize=10
+set CMDBValidationQuery= "select systimestamp from dual"
+set CMDBTestConnectionOnCheckout=false
+set CMDBCheckoutTimeout=5000
+set ChannelDBSchema=ncbacib
+set PESLINK_CORE_SERVICES_MP_REST_URL=https://trinity.cbaloop.com
+java -jar target\NlsEnquiryServices-bootable.jar  -Djboss.bind.address=0.0.0.0
